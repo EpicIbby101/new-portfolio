@@ -3,7 +3,7 @@ import ProfileImage from '../assets/Picsart2.png'
 
 const Profile = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col text-center pt-20 pb-6">
+    <div className="min-h-screen flex items-center justify-center flex-col text-center pt-20 pb-0">
       <h1 className="text-5xl md:text-7xl mb-1 md:mb-3 font-bold dark:text-white mt-7 z-10">
         Kevin Grittner
       </h1>
@@ -69,11 +69,11 @@ const Profile = () => {
         <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
           {" "}
           <img
-            className="bg-"
+            className="bg-white rounded-full mt-1.5"
             src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
             alt="nextjs"
-            width="40"
-            height="40"
+            width="45"
+            height="45"
           />{" "}
         </a>
         <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
@@ -191,7 +191,7 @@ const Profile = () => {
           />{" "}
         </a>
       </p>
-      <div className="h-1 bg-gray-700 w-full opacity-70 mt-5 mb-5" />
+      <div className="h-1 bg-gray-700 w-full opacity-70 mt-9 mb-5" />
     </div>
   );
 };
