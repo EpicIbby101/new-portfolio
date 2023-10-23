@@ -1,4 +1,7 @@
 import React from "react";
+import GithubLogo from '../assets/Githublogo.png'
+import InstagramLogo from '../assets/instagram.svg'
+import LinkedInLogo from '../assets/linkedin.png'
 
 const Navbar = () => {
   return (
@@ -11,7 +14,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer">
                 <img 
-                src="assets/Githublogo.png"
+                src={GithubLogo}
                 className="w-11 ml-5"
                 alt="Github"
                 ></img>
@@ -22,7 +25,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer">
                 <img 
-                src="assets/linkedin.png"
+                src={LinkedInLogo}
                 className="w-10"
                 alt="LinkedIn"
                 ></img>
@@ -33,7 +36,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer">
                 <img 
-                src="assets/instagram.svg"
+                src={InstagramLogo}
                 className="w-10"
                 alt="Instagram"
                 ></img>
