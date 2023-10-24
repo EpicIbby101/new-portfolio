@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/EpicIbby101/new-portfolio/static/css/main.2ba071ad.css",
+    "main.js": "/EpicIbby101/new-portfolio/static/js/main.603a8952.js",
+    "static/media/fitness.jpg": "/EpicIbby101/new-portfolio/static/media/fitness.58a9d2b2af8beac90873.jpg",
+    "static/media/social-media.jpg": "/EpicIbby101/new-portfolio/static/media/social-media.1c1a16467124a1d990e2.jpg",
+    "static/media/recipe.jpg": "/EpicIbby101/new-portfolio/static/media/recipe.26decc867174b66803cc.jpg",
+    "static/media/Picsart2.png": "/EpicIbby101/new-portfolio/static/media/Picsart2.2e70b2f2c40de6f9c62e.png",
+    "static/media/weather.png": "/EpicIbby101/new-portfolio/static/media/weather.19f02f9ef1ecee2ba3c3.png",
+    "static/media/earth.jpg": "/EpicIbby101/new-portfolio/static/media/earth.b8c3dc62bf784f85a434.jpg",
+    "static/media/email.png": "/EpicIbby101/new-portfolio/static/media/email.3546060de7f17b710726.png",
+    "static/media/pdf.png": "/EpicIbby101/new-portfolio/static/media/pdf.58e436e4cfa888b5937e.png",
+    "static/media/Githublogo.png": "/EpicIbby101/new-portfolio/static/media/Githublogo.27750e0bcaf33d75aadd.png",
+    "static/media/instagram.svg": "/EpicIbby101/new-portfolio/static/media/instagram.62572c862d53f228aa8eff879e2e1d37.svg",
+    "index.html": "/EpicIbby101/new-portfolio/index.html",
+    "main.2ba071ad.css.map": "/EpicIbby101/new-portfolio/static/css/main.2ba071ad.css.map",
+    "main.603a8952.js.map": "/EpicIbby101/new-portfolio/static/js/main.603a8952.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ba071ad.css",
+    "static/js/main.603a8952.js"
+  ]
+}
