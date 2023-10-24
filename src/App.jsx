@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar";
 import Navbar2 from "./components/Navbar2";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -75,6 +78,9 @@ function App() {
       <Navbar2 />
       <Profile />
       <Projects />
+      <Contact />
+      <ContactForm />
+      <Footer />
     </div>
     </div>
   );
