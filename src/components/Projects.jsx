@@ -80,6 +80,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      <div className="h-1 bg-gray-700 w-full opacity-70 mt-10 mb-9" />
     </div>
   );
 };

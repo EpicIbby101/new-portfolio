@@ -1,37 +1,4 @@
-import React from 'react';
-import ProfileImage from '../assets/Picsart2.png'
-
-const Profile = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center flex-col text-center pt-0 pb-0">
-      <h1 className="text-5xl md:text-7xl mb-1 md:mb-3 font-bold dark:text-white mt-7 z-10">
-        Kevin Grittner
-      </h1>
-      <p className="text-base md:text-xl mb-3 font-medium z-10">
-        Software Engineer & Web Developer
-      </p>
-      <img
-        src={ProfileImage}
-        alt="Kevin"
-        className="rounded-full w-72 mt-3 mb-7 z-10"
-      />
-      <p className="text-sm max-w-xl mb-6 font-bold z-10">
-        Combining Creativity with Technical Expertise to Build Innovative Apps
-        <br />-<br />
-        My goal as a developer is to build applications that are intuitive,
-        responsive, and user-friendly. I believe that technology has the power
-        to transform industries and improve people's lives, and I'm excited to
-        be a part of that transformation as a full-stack developer.
-        <br />
-      </p>
-
-      <h2 className="text-4xl md:text-4xl mb-1 md:mb-3 font-bold dark:text-white mt-7 underline">
-        Main Skills
-      </h2>
-      <h4 className="text-3xl md:text-3xl mb-1 md:mb-3 font-bold dark:text-white mt-7">
-        💻 Technologies 💻
-      </h4>
-      <p className="flex space-x-3">
+<p className="flex space-x-3">
         <a
           href="https://www.w3schools.com/css/"
           target="_blank"
@@ -124,9 +91,7 @@ const Profile = () => {
         </a>
       </p>
       <br />-<br />
-      <h4 className="text-3xl md:text-3xl mb-1 md:mb-3 font-bold dark:text-white mt-7">
-        ⚒️ Tools ⚒️
-      </h4>
+
       <p className="flex space-x-3">
         <a href="https://www.blender.org/" target="_blank" rel="noreferrer">
           {" "}
@@ -192,10 +157,3 @@ const Profile = () => {
           />{" "}
         </a>
       </p>
-
-      <div className="h-1 bg-gray-700 w-full opacity-70 mt-9 mb-5" />
-    </div>
-  );
-};
-
-export default Profile;

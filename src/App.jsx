@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import '../src/styles/tailwind.css'
 import Navbar from "./components/Navbar";
+import Navbar2 from "./components/Navbar2";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 
@@ -70,6 +72,7 @@ function App() {
       </button>
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
       <Navbar />
+      <Navbar2 />
       <Profile />
       <Projects />
     </div>

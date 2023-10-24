@@ -1,0 +1,48 @@
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px; /* Initially hidden */
+    width: 260px;
+    height: 100%;
+    background: #333;
+    color: white;
+    transition: left 0.3s ease-in-out; /* Add a smooth transition */
+    overflow-x: hidden; /* Hide content that overflows the sidebar */
+    z-index: 1;
+  }
+  
+  /* Sidebar opened */
+  .sidebar.open {
+    left: 0; /* Slide in from the left when open */
+  }
+  
+  /* Toggle button */
+  .toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    z-index: 1; /* Ensure the button is above the sidebar */
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Sidebar links */
+  .links {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0; /* Adjusted to move the button to the right */
+  }
+  
+  .links li {
+    padding: 10px 20px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Add any additional styling as needed */
+  
