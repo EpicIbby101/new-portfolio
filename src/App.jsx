@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import '../src/styles/tailwind.css'
+import {
+  Link as ScrollLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+} from "react-scroll";
+import "../src/styles/tailwind.css";
 import Navbar from "./components/Navbar";
 import Navbar2 from "./components/Navbar2";
 import Profile from "./components/Profile";
@@ -71,17 +77,23 @@ function App() {
         onClick={handleThemeSwitch}
         className="fixed z-50 right-7 top-3.5 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
       >
-        {theme === 'dark' ? sun : moon}
+        {theme === "dark" ? sun : moon}
       </button>
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
-      <Navbar />
-      <Navbar2 />
-      <Profile />
-      <Projects />
-      <Contact />
-      <ContactForm />
-      <Footer />
-    </div>
+        <Navbar />
+        <Navbar2 />
+        <Element name="home">
+          <Profile />
+        </Element>
+        <Element name="projects">
+          <Projects />
+        </Element>
+        <Element name="contact">
+          <Contact />
+        </Element>
+        <ContactForm />
+        <Footer />
+      </div>
     </div>
   );
 }
