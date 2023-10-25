@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Navbar2 = () => {
   return (
-    <nav className="dark:bg-gray-800 p-2 shadow-md">
+    <nav className="fixed top-0 w-full dark:bg-gray-800 p-2 shadow-md z-30">
       <div className="container mx-auto">
         <ul className="flex justify-center space-x-4 mt-16">
           <li>
@@ -12,7 +14,7 @@ const Navbar2 = () => {
           </li>
           <li>
             <a href="#" className="dark:text-white hover:text-gray-300">
-              About
+              Projects
             </a>
           </li>
           <li>

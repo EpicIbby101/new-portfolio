@@ -6,7 +6,7 @@ import LinkedInLogo from '../assets/linkedin.png'
 const Navbar = () => {
   return (
   
-    <div className="fixed flex justify-between items-center h-16 sm:h-16 md:h-16 z-20 bg-white/80 dark:bg-gray-700/80 backdrop-blur w-full shadow-md transition duration-500">
+    <div className="fixed flex justify-between items-center h-16 sm:h-16 md:h-16 z-40 bg-white/80 dark:bg-gray-700/80 backdrop-blur w-full shadow-md transition duration-500">
 
       <div className=" flex items-center mr-20 space-x-5 ">
       <a

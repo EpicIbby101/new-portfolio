@@ -3,7 +3,7 @@ import ProfileImage from '../assets/Picsart2.png'
 
 const Profile = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col text-center pt-0 pb-0">
+    <div className="min-h-screen flex items-center justify-center flex-col text-center pt-24 pb-0">
       <h1 className="text-5xl md:text-7xl mb-1 md:mb-3 font-bold dark:text-white mt-7 z-10">
         Kevin Grittner
       </h1>
