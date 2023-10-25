@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/new-portfolio/static/css/main.2ba071ad.css",
-    "main.js": "/new-portfolio/static/js/main.20c4b031.js",
+    "main.css": "/new-portfolio/static/css/main.10e9dc27.css",
+    "main.js": "/new-portfolio/static/js/main.6e7939a4.js",
     "static/media/fitness.jpg": "/new-portfolio/static/media/fitness.58a9d2b2af8beac90873.jpg",
     "static/media/social-media.jpg": "/new-portfolio/static/media/social-media.1c1a16467124a1d990e2.jpg",
     "static/media/recipe.jpg": "/new-portfolio/static/media/recipe.26decc867174b66803cc.jpg",
@@ -13,11 +13,11 @@
     "static/media/Githublogo.png": "/new-portfolio/static/media/Githublogo.27750e0bcaf33d75aadd.png",
     "static/media/instagram.svg": "/new-portfolio/static/media/instagram.62572c862d53f228aa8eff879e2e1d37.svg",
     "index.html": "/new-portfolio/index.html",
-    "main.2ba071ad.css.map": "/new-portfolio/static/css/main.2ba071ad.css.map",
-    "main.20c4b031.js.map": "/new-portfolio/static/js/main.20c4b031.js.map"
+    "main.10e9dc27.css.map": "/new-portfolio/static/css/main.10e9dc27.css.map",
+    "main.6e7939a4.js.map": "/new-portfolio/static/js/main.6e7939a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ba071ad.css",
-    "static/js/main.20c4b031.js"
+    "static/css/main.10e9dc27.css",
+    "static/js/main.6e7939a4.js"
   ]
 }
