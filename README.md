@@ -14,4 +14,4 @@ A minimalist portfolio built on React to showcase my skills in Front-end web dev
 
 Click the link below to view my portfolio:
 
-https://kevingrittner.com/
+https://epicibby101.github.io/new-portfolio/
