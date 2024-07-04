@@ -1,14 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import type { JSX } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/app/logo.png";
-import github from "@/app/github-logo.png";
-import linkedin from "@/app/linkedin.png";
-import email from "@/app/email.png";
+import logo from "@/public/logo.png";
+import github from "@/public/github-logo.png";
+import linkedin from "@/public/linkedin.png";
+import email from "@/public/email.png";
 import config from "@/config";
 
 const links: {
@@ -41,7 +40,7 @@ const Header = () => {
   }, [searchParams]);
 
   return (
-    <header className="bg-base-200 fixed top-0 w-full z-50">
+    <header className="bg-base-200 fixed top-0 w-full rounded-b-xl z-50">
       <nav
         className="container flex items-center justify-between px-8 py-4 mx-auto"
         aria-label="Global"

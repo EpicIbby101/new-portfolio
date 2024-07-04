@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Avatar from "@/app/main.jpg";
-import BackgroundImg from "@/app/pinksky.jpg";
+import Avatar from "@/public/main.jpg";
+import BackgroundImg from "@/public/pinksky.jpg";
 
 const Hero = () => {
   return (
     <div
-      className="relative w-full"
+      className="relative w-full shadow-xl"
       style={{
         backgroundImage: `url(${BackgroundImg.src})`,
         backgroundSize: "cover",
