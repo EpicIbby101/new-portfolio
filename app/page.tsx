@@ -1,8 +1,7 @@
 import { Suspense } from 'react'
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Problem from "@/components/Problem";
-import FeaturesAccordion from "@/components/FeaturesAccordion";
+import Technologies from "@/components/Technologies";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
@@ -16,7 +15,7 @@ export default function Home() {
       </Suspense>
       <main>
         <Hero />
-        <Problem />
+        <Technologies />
         {/* <FeaturesAccordion /> */}
         <Pricing />
         <FAQ />
