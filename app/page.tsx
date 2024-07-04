@@ -6,6 +6,7 @@ import Projects from "@/components/Projects";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import ArtworkShowcase from '@/components/ArtworkShowcase';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <Technologies />
         <Projects />
+        <ArtworkShowcase />
         {/* <FAQ /> */}
         <CTA />
       </main>
