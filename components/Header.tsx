@@ -5,8 +5,10 @@ import type { JSX } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import ButtonSignin from "./ButtonSignin";
-import logo from "@/app/icon.png";
+import logo from "@/app/logo.png";
+import github from "@/app/github-logo.png";
+import linkedin from "@/app/linkedin.png";
+import email from "@/app/email.png";
 import config from "@/config";
 
 const links: {
@@ -14,20 +16,18 @@ const links: {
   label: string;
 }[] = [
   {
-    href: "/#pricing",
-    label: "Pricing",
-  },
-  {
     href: "/#testimonials",
-    label: "Reviews",
+    label: "About Me",
   },
   {
     href: "/#faq",
-    label: "FAQ",
+    label: "My Blog",
+  },
+  {
+    href: "/sign-in",
+    label: "Contact Me",
   },
 ];
-
-const cta: JSX.Element = <ButtonSignin extraStyle="btn-primary" />;
 
 // A header with a logo on the left, links in the center (like Pricing, etc...), and a CTA (like Get Started or Login) on the right.
 // The header is responsive, and on mobile, the links are hidden behind a burger button.
@@ -41,7 +41,7 @@ const Header = () => {
   }, [searchParams]);
 
   return (
-    <header className="bg-base-200">
+    <header className="bg-base-200 fixed top-0 w-full z-50">
       <nav
         className="container flex items-center justify-between px-8 py-4 mx-auto"
         aria-label="Global"
@@ -56,17 +56,15 @@ const Header = () => {
             <Image
               src={logo}
               alt={`${config.appName} logo`}
-              className="w-8"
+              className="w-10"
               placeholder="blur"
               priority={true}
-              width={32}
-              height={32}
             />
-            <span className="font-extrabold text-lg">{config.appName}</span>
+            <span className="font-extrabold text-2xl">{config.appName}</span>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
-        <div className="flex lg:hidden">
+        <div className="flex lg:hidden ml-auto">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
@@ -90,22 +88,67 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Your links on large screens */}
-        <div className="hidden lg:flex lg:justify-center lg:gap-12 lg:items-center">
-          {links.map((link) => (
-            <Link
-              href={link.href}
-              key={link.href}
-              className="link link-hover"
-              title={link.label}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
+        <div className="flex items-center lg:justify-end lg:flex-1">
+          {/* Your links on large screens */}
+          <div className="hidden lg:flex lg:justify-center lg:gap-3 lg:items-center">
+            {links.map((link, index) => (
+              <>
+                <Link
+                  href={link.href}
+                  key={link.href}
+                  className="link link-hover"
+                  title={link.label}
+                >
+                  {link.label}
+                </Link>
+                {index <= links.length - 1 && (
+                  <span className="border-l border-gray-300 h-6 mx-2"></span>
+                )}
+              </>
+            ))}
+          </div>
 
-        {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
+          {/* CTA on large screens */}
+          {/* <div className="hidden lg:flex lg:ml-6 ">{cta}</div> */}
+          <div className="hidden lg:flex ml-3 space-x-3">
+            <Link
+              className="flex items-center gap-2 shrink-0 hover:scale-110 transition-all duration-200"
+              href="https://www.linkedin.com/in/kevin-grittner-770465243/"
+            >
+              <Image
+                src={linkedin}
+                alt="linkedin"
+                className="w-10"
+                placeholder="blur"
+                priority={true}
+              />
+            </Link>
+            <Link
+              className="flex items-center gap-2 shrink-0 hover:scale-110 transition-all duration-200"
+              href="https://github.com/EpicIbby101"
+            >
+              <Image
+                src={github}
+                alt="github"
+                className="w-10"
+                placeholder="blur"
+                priority={true}
+              />
+            </Link>
+            <Link
+              className="flex items-center gap-2 shrink-0 hover:scale-110 transition-all duration-200"
+              href="mailto:kevin_grittner@outlook.com"
+            >
+              <Image
+                src={email}
+                alt="email"
+                className="w-10"
+                placeholder="blur"
+                priority={true}
+              />
+            </Link>
+          </div>
+        </div>
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
@@ -172,7 +215,44 @@ const Header = () => {
             </div>
             <div className="divider"></div>
             {/* Your CTA on small screens */}
-            <div className="flex flex-col">{cta}</div>
+            <div className="flex flex-row space-x-3">
+              <Link
+                className="flex items-center gap-2 shrink-0 hover:scale-110 transition-all duration-200"
+                href="https://www.linkedin.com/in/kevin-grittner-770465243/"
+              >
+                <Image
+                  src={linkedin}
+                  alt="linkedin"
+                  className="w-10"
+                  placeholder="blur"
+                  priority={true}
+                />
+              </Link>
+              <Link
+                className="flex items-center gap-2 shrink-0 hover:scale-110 transition-all duration-200"
+                href="https://github.com/EpicIbby101"
+              >
+                <Image
+                  src={github}
+                  alt="github"
+                  className="w-10"
+                  placeholder="blur"
+                  priority={true}
+                />
+              </Link>
+              <Link
+                className="flex items-center gap-2 shrink-0 hover:scale-110 transition-all duration-200"
+                href="mailto:kevin_grittner@outlook.com"
+              >
+                <Image
+                  src={email}
+                  alt="email"
+                  className="w-10"
+                  placeholder="blur"
+                  priority={true}
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
