@@ -10,7 +10,7 @@ const Technologies = () => {
         <h3 className="max-w-xl mx-auto text-3xl opacity-90 leading-relaxed mb-5 md:mb-5">
           💻 Technologies 💻
         </h3>
-        <p className="flex space-x-3 justify-center mb-0">
+        <p className="flex flex-wrap space-x-3 justify-center mb-0">
           <a
             href="https://www.w3schools.com/css/"
             target="_blank"
