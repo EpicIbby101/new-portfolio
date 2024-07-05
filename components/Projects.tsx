@@ -44,10 +44,12 @@ const Projects: React.FC = () => {
     <div>
       <section className="bg-base-200 overflow-hidden">
         <div className="py-24 px-8 max-w-5xl mx-auto">
-          <div className="flex flex-col text-center w-full mb-16">
-            <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-0 md:mb-0 underline">
+          <div className="flex flex-col text-center w-full mb-10">
+            <h1 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-0 md:mb-0 underline">
               My Recent Projects
-            </h2>
+            </h1>
+            <p className="mt-3">I am always looking to perfect my coding skills through my projects. I have many more that I&apos;m working on but here are my latest personal achievements.</p>
+            <p className="mt-3 underline">Please visit my blog to see what I&apos;m currently working on.</p>
           </div>
           <div className="flex justify-center">
             <ProjectGrid projects={grid} />
